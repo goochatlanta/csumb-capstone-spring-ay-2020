@@ -1,0 +1,23 @@
+.wrapper{
+	border: solid #000;
+	border-width: 1px;
+
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+
+	max-width: 960px;
+	overflow: auto;
+	
+	padding-right: 10px;
+	padding-left: 10px;		
+}
+
+.centerText{
+	text-align: center;
+}
+
+.headingFont{
+	font-size: 25px;
+	font-weight: bold;
+}

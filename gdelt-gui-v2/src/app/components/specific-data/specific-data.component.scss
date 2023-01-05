@@ -1,0 +1,67 @@
+#content {
+    width: 100%;
+    text-align: center;
+    font-size: large;
+}
+#outer {
+    padding: 1%;
+    width: 90%;
+    margin: 0 auto;
+}
+#tables {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+#left, #middle, #right {
+    border-radius: 50px;
+    border: 3px solid rgb(41, 41, 41);
+    padding: 2%;
+    padding-left: 3%;
+    //padding-right: 3%;
+    display: table-cell;
+    width: 28%;
+}
+.mat-slide-toggle {
+    display: inline;
+    padding: 3px;
+}
+::ng-deep .mat-slide-toggle-bar {
+    background-color: gray;
+}
+.tooltip {
+    position: relative;
+    display: inline;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 35px;
+    // ToolTip Position
+    position: absolute;
+    z-index: 2;
+    margin-top: -35px;
+    margin-left: 110px;
+    // Fades in ToolTip
+    opacity: 0;
+    transition: opacity 1s;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+#downloadButton {
+    margin: 30px;
+    border-radius: 50px;
+    font-size: 20px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}

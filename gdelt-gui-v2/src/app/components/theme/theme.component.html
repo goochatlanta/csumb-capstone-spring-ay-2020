@@ -1,0 +1,261 @@
+<style>
+	/* All styles for this html is stored in it's respective component.scss file*/
+</style>
+
+<header>
+	<div class = "centerText">
+		<h2>Query #2</h2>
+		<div class = "headingFont">
+			<h3>What specific theme interests you?</h3>
+		</div>
+	</div>	
+</header>
+
+<div id="search">
+	<div class="autocomplete">
+		<input id="searchbar" autocomplete="off" type="text" placeholder="Search...">
+	</div>
+	<button mat-flat-button color="primary" (click)="search()">
+		<mat-icon class="icon">search</mat-icon>
+	</button>
+
+	<h4 id="searchMessage">Entered theme does not exist.</h4>
+</div>
+
+<div id="columns">
+	<!---------------------------------------------------------------------------------------->
+	<!--The Left Column-->
+	<!---------------------------------------------------------------------------------------->
+	<div class = "grouped">
+		<div class = "wrapper">
+			<a class="headingFont">Economic Growth</a>
+			<div id = "theme3">
+				<a *ngFor="let item of theme3">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+
+			<a class="headingFont">Environment, Natural Resources and Blue Economy</a>
+			<div id = "theme6">
+				<a *ngFor="let item of theme6">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+
+			<a class="headingFont">Health, Nutrition and Population</a>
+			<div id = "theme10">
+				<a *ngFor="let item of theme10">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+
+			<a class="headingFont">Information and Communication Technologies</a>
+			<div id = "theme11">
+				<a *ngFor="let item of theme11">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+
+			<a class="headingFont">Macroeconomic Vulnerability and Debt</a>
+			<div id = "theme14">
+				<a *ngFor="let item of theme14">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+
+			<a class="headingFont">Poverty</a>
+			<div id = "theme15">
+				<a *ngFor="let item of theme15">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+
+			<a class="headingFont">Private Sector Development</a>
+			<div id = "theme16">
+				<a *ngFor="let item of theme16">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>		
+		</div>
+	</div>
+	<!---------------------------------------------------------------------------------------->
+
+	<!---------------------------------------------------------------------------------------->
+	<!--The Center Column-->
+	<!---------------------------------------------------------------------------------------->
+	<div class = "grouped">
+		<div class = "wrapper">
+			<a class="headingFont">Financial Sector Development</a>
+			<div id = "theme7">
+				<a *ngFor="let item of theme7">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+
+			<a class="headingFont">Fragility, Conflict and Violence</a>
+			<div id = "theme8">
+				<a *ngFor="let item of theme8">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+
+			<a class="headingFont">Jobs</a>
+			<div id = "theme12">
+				<a *ngFor="let item of theme12">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+
+			
+
+			<a class="headingFont">Public-Private Partnerships</a>
+			<div id = "theme18">
+				<a *ngFor="let item of theme18">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+
+
+			<a class="headingFont">Social Protection and Labor</a>
+			<div id = "theme20">
+				<a *ngFor="let item of theme20">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+			<a class="headingFont">Urban Development</a>
+			<div id = "theme23">
+				<a *ngFor="let item of theme23">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+			<a class="headingFont">Water</a>
+			<div id = "theme24">
+				<a *ngFor="let item of theme24">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!---------------------------------------------------------------------------------------->
+
+	<!---------------------------------------------------------------------------------------->
+	<!--The Right Column-->
+	<!---------------------------------------------------------------------------------------->
+	<div class = "grouped">
+		<div class = "wrapper">
+			<a class="headingFont">Agriculture and Food Security</a>
+			<div id = "theme1">
+				<a *ngFor="let item of theme1">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+
+			<a class="headingFont">Climate Change</a>
+			<div id = "theme2">
+				<a *ngFor="let item of theme2">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+
+			<a class="headingFont">Education</a>
+			<div id = "theme4">
+				<a *ngFor="let item of theme4">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+
+			<a class="headingFont">Energy and Extractives</a>
+			<div id = "theme5">
+				<a *ngFor="let item of theme5">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+
+			<a class="headingFont">Macroeconomic and Structural Policies</a>
+			<div id = "theme14">
+				<a *ngFor="let item of theme14">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+
+			<a class="headingFont">Social Development</a>
+			<div id = "theme19">
+				<a *ngFor="let item of theme19">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+
+			<a class="headingFont">Transport</a>
+			<div id = "theme21">
+				<a *ngFor="let item of theme21">
+					<br>
+						<a href="/theme-visuals" (click)="themeClicked($event, item)">{{ item }}</a>
+					<br>
+				</a>
+			</div>
+			<br>
+
+			
+		</div>
+	</div>
+	<!---------------------------------------------------------------------------------------->
+</div>

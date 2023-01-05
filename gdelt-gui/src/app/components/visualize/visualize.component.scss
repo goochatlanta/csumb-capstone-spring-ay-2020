@@ -1,0 +1,20 @@
+.tab{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: larger;
+    outline: 1px solid lightgray;
+    border-radius: 8px;
+}
+.chart-container{
+    padding-left: 20vw;
+    padding-top: 5px;
+ }
+#chartLoading{
+    text-align: center;
+}
+:empty{
+    height: 1px;
+}
+

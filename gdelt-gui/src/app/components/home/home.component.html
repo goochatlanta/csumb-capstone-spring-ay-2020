@@ -1,0 +1,58 @@
+<br>
+<div id="content">
+    <br>
+    <a id="dataButton" mat-button [routerLink]="'/data'"> 
+        <mat-icon class="icon">search</mat-icon>
+          <span  class="label">Begin Exploring the Data</span>
+    </a>
+    <br>
+    <br>
+    <div id="outer">
+        <div id="center">
+            <div id="left">
+                <h2>Motivation: </h2>
+                GDELT-China brings event and news article information to an accessible interface for the
+                average researcher interested in media coverage of Chinese activities around the world. We took the
+                initiative to reorganize and narrow the scope of GDELT 2.0 because the GDELT organization offers
+                a rich source of data on the global media landscape. However, GDELT relies on query-based access
+                using SQL code query the millions of events and event mentions which is unapproachable for many
+                potential users. We hope that our query and visualization interface makes your investigation much easier. 
+            </div>
+            <div id="right">
+                <h2>Team:</h2>
+                We have constructed GDELT-China as collaborative undertaking between the Naval Postgraduate School
+                and California State Monterey Bay. The effort is headed by NPS economics professor Elizabeth Gooch
+                who’s research focuses on Chinese economy and politics. The computer design side of GDELT-China is
+                run by Eric Eckstrand, a research associate in NPS’ Data Science and Analytics Group. On-the-ground
+                construction of the website and data organization was conducted by a team of CSUMB Computer Science
+                seniors as their Capstone Project: Chris Mayers, Salihullah Salarzai, Sam Westigard, and Paul Whipp.
+            </div>
+            
+        </div>
+        <br>
+            <br>
+        <div id="lower">
+            <h2>Overview of Product:</h2> 
+                <b>Scope:</b><br><br>
+                The scope of the data accessible through the GDELT-China interface focuses on news coverage of Chinese activities around the world.
+                Specifically, we narrow GDELT events to those event for which the country code of one of the two actors in an event is of Chinese origin.
+                In terms of the variables from GDELT, we limited observations from the events table to [SQL query code ~ event included if actor1 or actor2 country code is China.]
+                <br><br>
+                <b>Decisions we made:</b> 
+                <ul>
+                    <li>We have kept all confidence levels available in the dataset</li>
+                    <li>One criticism of GDELT is that the inclusion of press sources is variable. In order to ensure a consistent sample of the global media across time,
+                        we have strictly defined the press included in the dataset. </li>
+                    <ul>
+                        <li>Press sources:</li>
+                        <ul>
+                            <li>China: list the sources we include.</li>
+                            <li>India: list the sources we include.</li>
+                            <li>Bangladesh: list the sources we include.</li>
+                        </ul>
+                    </ul>
+                </ul>                
+        </div>
+    </div>
+</div>
+<br>

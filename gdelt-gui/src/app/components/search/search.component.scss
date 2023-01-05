@@ -1,0 +1,23 @@
+#left{
+    width:33%;
+    margin-left:0; 
+    margin-right:auto;
+    padding-left: 50px;
+}
+#outer{
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+.tab{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: larger;
+    outline: 1px solid lightgray;
+    border-radius: 8px;
+}
+#processing{
+    visibility: hidden;
+}

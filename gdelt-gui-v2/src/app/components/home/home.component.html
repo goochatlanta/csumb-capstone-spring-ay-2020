@@ -1,0 +1,41 @@
+<br>
+<div id="content">
+    <div id="outer">
+        <div id="center">
+            <div id="left">
+                <h2>What is GBBAT?</h2>
+                <h3>GDELT Browser-Based Access Tool</h3>
+
+                <p>
+                    If you are at this site, then you likely already know about the dataset GDELT. But if you don't please click here.
+                    <br><br>
+                    We created GBBAT to help you access the massive GDELT dataset. The site is organized along a series of SQL queries 
+                    you'll be performing on the three tables: <i>events</i>, <i>eventmentions</i>, and <i>GKG</i>. 
+                    <br><br>
+                    This page offers you one query choice - to choose to look at the global newspace that covers events that involved 
+                    an actor (one of two) from China. 
+                </p>
+                <br>
+                <p style="text-align: center;">
+                    <a href="/about-team">About the Team</a> | <a href="/about-data">About the Data</a>
+                </p>
+            </div>
+
+            <div id="right">
+                <h2>Use GBBAT</h2>
+                <h3>Access Data (Query #1)</h3>
+
+                <p>
+                    If you want to look at events & related news articles where a principle actor is of Chinese origin.
+                    <br><br>
+                    SQL : FROM events WHERE actor1 == CN OR actor2 == CN
+                </p>
+                <br>
+                <a id="dataButton" mat-flat-button color="primary" [routerLink]="'/narrow-search'"> 
+                    <mat-icon class="icon">search</mat-icon> &nbsp;
+                    <span class="label">Begin Exploring the Data</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

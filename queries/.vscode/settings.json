@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "gdelt",
+            "dialect": "MySQL",
+            "name": "gdelt",
+            "password": "R1m23&!#Bto",
+            "port": 3306,
+            "server": "gdelt-events-mentions.cbghl9qobm13.us-east-2.rds.amazonaws.com",
+            "username": "admin"
+        }
+    ]
+}

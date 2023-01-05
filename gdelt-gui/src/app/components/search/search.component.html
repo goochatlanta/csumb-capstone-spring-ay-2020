@@ -1,0 +1,64 @@
+<div id="outer">
+    <div id="left">
+          <br>
+          <br>
+          <div id="currentSelection">
+              <b>Current Selection: {{currentCategory}} - {{currentDescription}}</b>    
+          </div>
+          <br>
+          <br>
+          <div id="otherActor" *ngIf="displayActor">Other Actor: 
+            <select id="otherActorSelect" [(ngModel)]="actorSelected">
+                <option *ngFor="let actor of countriesList"[value]="actor.code">
+                    {{actor.name}}
+                </option>
+            </select>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+          </div>
+          <div id="pressOrigin" *ngIf="displayPress">Press Origin: 
+            <select id="pressOriginSelect" [(ngModel)]="originSelected">
+                <option *ngFor="let press of pressList"[value]="press.code">
+                    {{press.name}}
+                </option>
+            </select>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+          </div>
+          <div id="eventLocation" *ngIf="displayLocation">Event Location: 
+            <select id="eventLocationSelect" [(ngModel)]="locationSelected">
+                <option *ngFor="let location of locationList"[value]="location.code">
+                    {{location.name}}
+                </option>
+            </select>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+          </div>
+          <div id="cameoCode" *ngIf="displayCameo">CAMEO Code: 
+            <select id="cameoCodeSelect" [(ngModel)]="cameoSelected">
+              <option *ngFor="let code of cameoList"[value]="code.number">
+                  {{code.description}}
+              </option>
+            </select> 
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+          </div> 
+          <a class="tab" mat-button (click)="query()"> 
+            <mat-icon class="icon">get_app</mat-icon>
+              <span  class="label">  Download Results</span>
+          </a>
+          <h2 id="processing">Please wait while your request processes...</h2>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.container{
+    float: left;
+    width: 43%;
+    padding-left: 50px;
+    text-align: left;
+    font-size: 18px;
+}
+.routeButton{
+    display: inline-block;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: larger;
+    outline: 1px solid lightgray;
+    border-radius: 8px;
+}
+#divider{
+    width: 3%;
+    display: inline-block ;
+}

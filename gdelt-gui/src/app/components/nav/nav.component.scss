@@ -1,0 +1,36 @@
+.icon {
+  height: 30px;
+  margin: 0 auto;
+  padding-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+  width: 15%;
+}
+.label {
+  line-height: 1px;
+  margin: 0;
+  width: 85%;
+  padding-left: 0em;
+}
+
+.mat-toolbar.mat-primary {
+  background: #2576D6;
+  color: #fff;
+  padding: 0.5%;
+}
+h1{
+  font-size: 2vw;
+}
+#container{
+  cursor: pointer;
+  align-content: left;
+  display: flex;
+  width: 20%;
+  align-items: center;
+}
+#logo{
+  width: 20%;
+}
+#divider{
+  width: 1%;
+}

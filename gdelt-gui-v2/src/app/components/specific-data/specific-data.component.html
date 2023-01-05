@@ -1,0 +1,89 @@
+<br>
+<div id="content">
+    <div id="outer">
+        <h2 id="title">So you want more specific GDELT data about events in Ghana?</h2>
+        <h3>Here is what GBBAT has to offer...</h3>
+        <br>
+        <h3>Choose variables from the three GDELT tables that interest you.</h3>
+        <br>
+        
+        <div id="tables">
+            <div id="left">
+                <h3><i>Events</i> Table</h3>
+                
+                <mat-slide-toggle (change)="toggle($event)" color="primary">Day</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">MonthYear</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">Year</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">FractionDate</mat-slide-toggle>
+                
+                <div class="tooltip">
+                    <mat-slide-toggle (change)="toggle($event)" color="primary">Actor Attributes</mat-slide-toggle>
+                    <span class="tooltiptext">
+                        Attributes of the 2 actors involved in the event (Codes, Names, Country Codes, 
+                        Group Codes, Religions, Type Codes).
+                    </span>
+                </div>
+
+                <mat-slide-toggle (change)="toggle($event)" color="primary">IsRootEvent</mat-slide-toggle>
+                <div class="tooltip">
+                    <mat-slide-toggle (change)="toggle($event)" color="primary">Event Codes</mat-slide-toggle>
+                    <span class="tooltiptext">
+                        Event Code, Event Base Code, Event Root Code
+                    </span>
+                </div>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">QuadClass</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">GoldsteinScale</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">NumMentions</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">NumSources</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">NumArticles</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">AvgTone</mat-slide-toggle>
+                
+                <div class="tooltip">
+                    <mat-slide-toggle (change)="toggle($event)" color="primary">Action Geo Attributes</mat-slide-toggle>
+                    <span class="tooltiptext">
+                        Type, Full Name, Country Code, ADM Codes, Latitude, Longitude, & Feature ID
+                    </span>
+                </div>
+                <div class="tooltip">
+                    <mat-slide-toggle (change)="toggle($event)" color="primary">Actor Geo Attributes</mat-slide-toggle>
+                    <span class="tooltiptext">
+                        Geo Attributes of the 2 actors in the event (Type, Full Name, Country Code, ADM Codes, Latitude, Longitude, Feature ID).
+                    </span>
+                </div>
+
+                <mat-slide-toggle (change)="toggle($event)" color="primary">DATEADDED</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">SOURCEURL</mat-slide-toggle>                
+            </div>
+            <p>&#8592; 1 : Many &#8594;</p>
+            <div id="middle">
+                <h3><i>Event Mentions</i> Table</h3>
+
+                <mat-slide-toggle (change)="toggle($event)" color="primary">EventTimeDate</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">MentionTimeDate</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">MentionType</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">MentionSourceName</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">MentionIdentifier</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">Confidence</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">MentionDocLen</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">MentionDocTone</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">MentionDocTranslationInfo</mat-slide-toggle>
+            </div>
+            <p>&#8592; 1 : 1 &#8594;</p>
+            <div id="right">
+                <h3><i>GKG</i> Table</h3>
+
+                <mat-slide-toggle (change)="toggle($event)" color="primary">V1COUNTS</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">V1THEMES</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">V1LOCATIONS</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">V1PERSONS</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">V1ORGANIZATIONS</mat-slide-toggle>
+                <mat-slide-toggle (change)="toggle($event)" color="primary">V1.5TONE</mat-slide-toggle>
+            </div>
+        </div>
+
+        <a id="downloadButton" mat-flat-button color="primary" (click)="query()"> 
+            <span class="label">Download Data</span>
+        </a>
+        <h3 id="processText">Please wait while we process your download...</h3>
+    </div>
+</div>

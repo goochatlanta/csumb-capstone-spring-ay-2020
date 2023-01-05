@@ -1,0 +1,68 @@
+/*.icon {
+  height: 30px;
+  margin: 0 auto;
+  padding-right: 5px;
+  text-align: center;
+  vertical-align: middle;
+  width: 15%;
+}
+.label {
+  line-height: 1px;
+  margin: 0;
+  width: 85%;
+  padding-left: 0em;
+}*/
+.mat-toolbar.mat-primary {
+  background: #2576D6;
+  color: #fff;
+  padding: 0.5%;
+}
+h1 {
+  font-size: 2vw;
+}
+#container {
+  cursor: pointer;
+  align-content: left;
+  display: flex;
+  width: 20%;
+  align-items: center;
+}
+#container2 {
+  cursor: pointer;
+  display: flex;
+  width: 4%;
+  align-items: center;
+}
+#logo {
+  width: 25%;
+}
+#helpicon {
+  width: 100%;
+  margin-left: auto;
+}
+#spacer {
+  flex: 1 1 auto;
+}
+#helpcontent {
+  width: 600px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 10px 20px;
+  border: 3px solid rgb(41, 41, 41);
+  border-radius: 35px;
+  // Position
+  position: absolute;
+  right: 20px;
+  top: 100px;
+  z-index: 2;
+}
+#sitemap {
+  width: 50%;
+}
+#helptext {
+  float: left;
+  width: 50%;
+  white-space: initial;
+  text-align: justify;
+}
